@@ -33,17 +33,26 @@ function encriptar(){
     let encontrado = false ;
 
     for(let i = 0; i < texto.length; i++){
-        for(let j = 0; j < codigos.length; j++){
-            if(texto[i] == codigos[j][0]){
-                encontrado = true;
-                texto_procesado += codigos[j][1];
-                break;
+        if(((texto[i] < 'a') || (texto[i] > 'z')) && (texto[i] != ' ')){
+            document.querySelector("#warning").style.color = "red";
+            document.querySelector("#warning").style.fontSize = "16px";
+            return;
+        }
+        else {
+            for(let j = 0; j < codigos.length; j++){
+                if(texto[i] == codigos[j][0]){
+                    encontrado = true;
+                    texto_procesado += codigos[j][1];
+                    break;
+                }
             }
+            if(encontrado == false){
+                texto_procesado += texto[i];       
+            }
+            encontrado = false;
         }
-        if(encontrado == false){
-            texto_procesado += texto[i];       
-        }
-        encontrado = false;
+        
+        
     }
     mostrar_resultado(texto_procesado);
 }
@@ -52,7 +61,15 @@ function desencriptar(){
     let texto = input.value;
 
     for(let i = 0; i < codigos.length; i++){
-            texto = texto.replaceAll(codigos[i][1], codigos[i][0]);
+            // texto = texto.replaceAll(codigos[i][1], codigos[i][0]);
+            if(((texto[i] < 'a') || (texto[i] > 'z')) && (texto[i] != ' ')){
+                document.querySelector("#warning").style.color = "red";
+                document.querySelector("#warning").style.fontSize = "16px";
+                return;
+            }
+            else {
+                texto = texto.replaceAll(codigos[i][1], codigos[i][0]);
+            }
         }
 
     mostrar_resultado(texto);
