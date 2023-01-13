@@ -33,7 +33,155 @@ body{
     display: block;
 }
 
+#box-interaction{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 100vw;
+}
 
+#box-input-1{
+    height: 81%;
+}
+
+#box-input textarea{
+    margin: 10px;
+    padding: 12px;
+    margin-top: 100px;
+    height: 100%;
+    border: none;
+    outline: none !important;
+    resize: none;
+    background: #F3F5FC;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 32px;
+}
+
+#box-input-2{
+    height: 19%;
+    margin-bottom: 15px;
+}
+
+#box-buttons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 45%;
+}
+
+#encryptor{
+    width: 80%;
+    height: 100%;
+    border-radius: 24px;
+    background: #0A3871;
+}
+
+#encryptor span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+#decrypter{ 
+    width: 80%;
+    height: 100%;
+    border-radius: 24px;
+    background: #D8DFE8;
+    box-sizing: border-box;
+    border-radius: 24px;
+}
+
+#decrypter span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;           
+    color: #0A3871;
+    margin: auto;
+}
+
+#box-results{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    width: 43%;
+}
+
+#result{
+    width: 80%;
+    height: 95%;
+    font-size: 24px;
+    padding: 25px;
+    color: #495057;
+    display: none;
+}
+
+#image{
+    width: 336px;
+    height: 304px;
+    margin-top: 100px;
+    align-self: center;
+    display: block;
+}
+
+#text-default-1{ 
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #343A40;
+    align-self: center;
+    display: block;
+}
+
+#text-default-1 p{
+    margin: 20px 0px 0px 0px;
+}
+
+
+#text-default-2{
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    align-self: center;
+    display: block;
+}
+
+#button-copy{
+    width: 80%;
+    height: 15%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+#copiar{
+    width: 93%;
+    height: 69%;
+    margin-top: 10px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 24px;
+}
+
+#copiar span{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;           
+    color: #0A3871;
+    margin: auto;
+}
 
 /* footer @autor  */
 footer{
