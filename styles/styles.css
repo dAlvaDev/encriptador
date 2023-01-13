@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html{
+    margin: 4vh 5vw 0vh 5vw;
+    padding: 0;
+    color: #0A3871;
+    line-height: 150%;
+}
+
+body{
+    background: #F3F5FC;
+}
+
+#main-container{
+    height: 88vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.main-boxes{
+    margin: 10px;
+}
+
+#box-logo{
+    display: block;
+}
+
+
+
+/* footer @autor  */
+footer{
+    height: 5vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+footer p{
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+  }
+
+footer ul{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer li{
+    margin: 5px 10px 5px 10px;
+  }
+
+footer a{
+    color: #0A3871;
+    font-size: 20px;
+}
