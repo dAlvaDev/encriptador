@@ -65,6 +65,7 @@ body{
     resize: none;
     background: #F3F5FC;
     color: #0A3871;
+    font-family: 'Source Sans Pro';
     font-size: 32px;
 }
 
@@ -116,6 +117,10 @@ body{
     border-radius: 24px;
     background: #0A3871;
 }
+#encryptor:hover{
+    background: rgba(43, 100, 173, 0.9);
+    cursor: pointer;
+}
 
 #encryptor span{
     font-weight: 400;
@@ -135,6 +140,10 @@ body{
     border-radius: 24px;
 }
 
+#decrypter:hover{
+    background: rgba(128, 142, 158, 0.9);
+    cursor: pointer;
+}
 #decrypter span{
     font-weight: 400;
     font-size: 16px;
@@ -220,6 +229,11 @@ body{
     text-align: center;           
     color: #0A3871;
     margin: auto;
+}
+
+#copiar:hover{
+    background: rgb(158, 141, 141);
+    cursor: pointer;
 }
 
 /* footer @autor  */
